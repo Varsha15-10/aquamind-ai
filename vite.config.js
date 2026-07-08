@@ -2,10 +2,12 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
+  // This line tells Vite to use relative paths so it loads correctly on GitHub Pages
+  base: '/aquamind-ai/', 
   plugins: [react()],
   server: {
     port: 5173,
-    host: true, // bind to 0.0.0.0 so it's reachable from your phone on the same WiFi
+    host: true, 
   },
   preview: {
     port: 4173,
