@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   // This line tells Vite to use relative paths so it loads correctly on GitHub Pages
-  base: '/aquamind-ai/', 
+  base: './',
   plugins: [react()],
   server: {
     port: 5173,
